@@ -46,9 +46,9 @@ void GpsPlugin::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
   last_time_ = world_->GetSimTime();
   last_gps_time_ = world_->GetSimTime();
 
-  // Use environment variables if set for home position.
-  const char *env_lat = std::getenv("PX4_HOME_LAT");
-  const char *env_lon = std::getenv("PX4_HOME_LON");
+  // I am using agrotech parks lat and long
+  const char *env_lat = 7.347417;
+  const char *env_lon = 81.739194;
   const char *env_alt = std::getenv("PX4_HOME_ALT");
 
   // Get noise param
